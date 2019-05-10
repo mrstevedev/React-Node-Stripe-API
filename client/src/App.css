@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #386a9d;
+  color: #fff;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Sansation Light";
+  margin: 15px 0;
+}
+
+h1 {
+  font-size: 19px;
+  font-weight: 100;
+}
+
+.container {
+  width: 890px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.example {
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  width: 400px;
+  display: flex;
+  margin:16px 0;
+  align-items: center;
+  /* visibility: hidden; */
+  position: relative;
+}
+
+.left p {
+  font-size: 14px;
+}
+
+.checkout {
+  width: 470px;
+  padding: 0 25px;
+}
+
+.about-container {
+  width: 437px;
+  padding: 0 15px;
+}
+
+.about-container p {
+  line-height: 1.2;
+  font-size: 15px;
+  letter-spacing: .4px;
+}
+
+.reactjs-txt {
+  color: #a0d7ff;
+}
+
+.about-top {
+  border-bottom: solid 1px #4578AC;
+  padding: 15px 0px;
+}
+
+.about-bottom {
+  padding: 15px 0px;
+  font-weight: 300;
+}
+
+/* ::placeholder {
+  color:#598FC6;
+  font-size: 13px;
+} */
+
+input.InputElement.is-invalid.Input {
+  color: #ffeb3b!important;
+}
+
+.ElementsApp .InputElement.is-invalid {
+  color: #ffeb3b!important;
+}
+
+.btn {
+  background: #fff;
+  width: 100%;
+  padding: 12px 0;
+  margin: 5px 0;
+  outline: none;
+  border: none;
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 15px;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #295C90;
+  color:#fff;
+}
+
+.form-container {
+  width: 224px;
+}
+
+footer {
+  text-align: center;
+}
+
+.footer p {
+  font-family: 'Sansation Light';
+  font-weight: 100;
+  font-size: 13px;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #333;
+}
+
+::selection {
+  color: #fff; 
+  background: #333;
+}
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  box-sizing: border-box;
+  padding: 12px 12px;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+
+  background: #fff;
+  /* width: 225px; */
+  height: 40px;
+  border: none;
+  text-indent: 12px;
+  color: #598fc6;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 13px;
+  outline: none;
+}
+
+/* .StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+} */
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+span.btn-text {
+  padding: 0 7px;
+}
+
+@media(max-width: 768px) {
+  .container {
+    width: auto;
+  }
+  .left{
+    display: none;
+  }
+  .about-container {
+    display: none;
+  }
+}
