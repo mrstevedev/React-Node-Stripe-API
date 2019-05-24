@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Spring, config } from 'react-spring/renderprops';
-import { Transition } from 'react-spring/renderprops'
 
-class LeftDescription extends React.Component {
+class LeftDescription extends Component {
  constructor(props) {
    super(props);
    this.state = {
@@ -18,7 +17,7 @@ class LeftDescription extends React.Component {
       <React.Fragment>
         <Spring
           items={this.state.leftItemsText}
-          from={{ right: -275, position: 'absolute', zIndex: '-1', opacity: 0 }}
+          from={{ right: -225, position: 'absolute', zIndex: '-1', opacity: 0 }}
           to={{ right: 0, position: 'absolute', zIndex: '-1', opacity: 1 }}
           config={ config.molasses }
           onRest={() => {

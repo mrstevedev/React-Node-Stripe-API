@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { Elements, StripeProvider } from "react-stripe-elements";
 import Form from "./components/Form";
+import Header from "./components/Header";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import LeftDescription from "./components/LeftDescription";
@@ -16,9 +17,12 @@ class App extends Component {
               <div className="left">
                 <LeftDescription />
               </div>
-              <Elements>
-                <Form />
-              </Elements>
+              <div className="checkout">
+                <Header />
+                <Elements>
+                  <Form />
+                </Elements>
+              </div>
               <About />
             </div>
           </StripeProvider>
